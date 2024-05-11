@@ -8,6 +8,7 @@ const links=[
 {label:'Modals',path:'/modal'},
 {label:'Table',path:'/table'},
 {label:'Counter',path:'/counter'},
+{label:'Counter1',path:'./counter1'},
 ];
 const renderedlinks=links.map((link)=>{
     return (

@@ -3,7 +3,7 @@ import classNames from 'classnames';
 function panel({ children, className, ...rest }) {
   const finalClassNames = classNames(
     'border rounded p-3 shadow bg-white w-full',
-    className
+    className 
   );
 
   return (

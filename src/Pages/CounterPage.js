@@ -2,17 +2,15 @@ import useCounter from '../hooks/use-counter';
 import Button from '../components/Button';
 
 
-
 function  CounterPage({initialCount}){
 
 const {count,Increment} =  useCounter(initialCount);
 
 return <div>
     <h1>count is {count}</h1>
-
-<Button onClick={Increment}>
+    <Button onClick={Increment}>
     Increment
-</Button>
+    </Button>  
 </div>
 }
 export default CounterPage;

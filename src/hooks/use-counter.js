@@ -1,23 +1,20 @@
-import  {useState ,useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
+function useCounter(initialCount) {
+  const [count, setCount] = useState(initialCount);
 
-function useCounter(initialCount){
-    const  [count,setCount]= useState(initialCount);
+  useEffect(() => {
+    console.log(count);
+  }, [count]);
 
-    useEffect(()=>{
-     console.log(count);
-    
-    },[count]);
-    
-    const Increment=()=>{
-        setCount(count+1);
-    };
-
-    return(
-      count,
-      Increment
-    );
-    
+    const Increment = () => {
+    setCount(count + 1);  
+  };
+     
+  return {
+    count,
+    Increment,  
+  };
 }
 
 export default useCounter;
